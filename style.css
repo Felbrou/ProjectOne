@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#gameArea {
+    width: 50vw; /* 50% of the viewport width */
+    height: 33.33vw; /* Maintaining a 3:2 aspect ratio */
+    max-width: 600px;
+    max-height: 400px;
+    position: relative;
+    background-color: #fff;
+    border: 2px solid #000;
+    margin: auto; /* Centering horizontally */
+}
+
+@media (orientation: portrait) {
+    #gameArea {
+        width: 80vw; /* Adjust width for portrait orientation */
+        height: 53.33vw; /* Adjust height to maintain aspect ratio */
+    }
+}
+
+#paddleA, #paddleB {
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    background-color: #000;
+}
+
+#paddleA {
+    left: 10px;
+}
+
+#paddleB {
+    right: 10px;
+}
+
+#ball {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+}
